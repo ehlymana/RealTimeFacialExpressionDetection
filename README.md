@@ -20,17 +20,21 @@ In order to use this project, you will need to have the following packages and f
 
 `pip install moviepy`
 
+`pip install cmake`
+
+`pip install dlib`
+
 ### Installing
 
 All the *.py* files are located in the **src** directory. They can be used for the following purposes:
 
-- **image_extraction_labelled.py**: for extracting the images from FLV videos defined in the AM-FED+ dataset, along with the labels and landmark points.
+- **image_extraction.py**: for extracting the images from FLV videos defined in the AM-FED+ dataset, along with the labels defining to which of the 8 classes the images belong and with which percentage.
+
+- **feature_extraction.py**: for extracting facial landmarks from the images of the dataset, in the same order as the labels and the extracted images.
 
 The AM-FED+ dataset needs to be located in the project directory (on the same level as the **src** directory).
 
-The resulting data will be saved in the **data** folder, all images for each video in the same folder.
-
-The resulting labels will be saved in the base project folder, in the **labels.csv** file.
+The resulting data will be saved in the **data** folder, all images for each video in the same folder. The labels and features are saved in the same folder as CSV files (**labels.cvs** and **features.csv**).
 
 ## License
 
